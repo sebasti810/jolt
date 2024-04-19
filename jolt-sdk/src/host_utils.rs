@@ -47,4 +47,10 @@ impl Proof {
         let file = File::open(path.into())?;
         Ok(Proof::deserialize_compressed(file)?)
     }
+
+    pub fn serialize_to_string(&self) -> Result<String> {
+        let mut buffer = Vec::new();
+        self.serialize_compressed(&mut buffer)?;
+        Ok(base64::encode(&buffer))
+    }
 }
