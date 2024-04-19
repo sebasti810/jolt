@@ -39,6 +39,7 @@ ark-ec = { version = "0.4.2", default-features = false, optional = true }
 ark-ff = { version = "0.4.2", default-features = false, optional = true }
 ark-bn254 = { version = "0.4.0", default-features = false, optional = true }
 ark-serialize = { version = "0.4.2", features = ["derive"], optional = true }
+base64 =  "0.22.0"
 
 jolt-sdk-macros = { path = "./macros" }
 jolt-core = { path = "../jolt-core", optional = true }

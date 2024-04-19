@@ -8,6 +8,8 @@ pub use ark_bn254::{Fr as F, G1Projective as G};
 pub use ark_ec::CurveGroup;
 pub use ark_ff::PrimeField;
 
+pub use base64;
+
 pub use common::{
     constants::MEMORY_OPS_PER_INSTRUCTION,
     rv_trace::{MemoryOp, RV32IM},
